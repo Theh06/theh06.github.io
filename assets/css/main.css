@@ -1,0 +1,56 @@
+/*Start Main tags header + body*/
+.ul-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3%;
+    list-style-type: none;
+}
+.ul-header-elem{
+    text-decoration: none;
+    font-size: 18px;
+    color: #808080;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.ul-header-elem:hover{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#current{
+    color: white;
+}
+body{
+    background-color: black;
+}
+.h1-title{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+/*End Main tags header + body*/
+
+/*Start About page*/
+.about-main-section{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.about-table{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    width: 600px;
+}
+
+/*End About page*/
+
+/*Start Resume page*/
+
+/*End Resume page*/

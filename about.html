@@ -6,40 +6,45 @@
     <title>About</title>
     <meta name="description" content="About me">
     <meta name="author" content="Igor">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+            <ul class="ul-header">
+                <li><a href="index.html", class="ul-header-elem">Home</a></li>
+                <li><a href="about.html", id="current", class="ul-header-elem">About</a></li>
+                <li><a href="resume.html", class="ul-header-elem">Resume</a></li>
+                <li><a href="portfolio.html", class="ul-header-elem">Portfolio</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h1>About me</h1>
+    <section class="about-main-section">
+        <h1 class="h1-title">About me</h1>
         <img src="assets/img/man_photo.jpg">
-        <div>
+        <div class="about-table">
             <div>
-                <b>Birthday:</b> 1 May 1996
+                <div>
+                    <b>Birthday:</b> 1 May 1996
+                </div>
+                <div>
+                    <b>Age:</b> 30
+                </div>
+                <div>
+                    <b>Degree:</b> Master
+                </div>
             </div>
             <div>
-                <b>Age:</b> 30
-            </div>
-            <div>
-                <b>Degree:</b> Master
-            </div>
-            <div>
-                <b>Email:</b> email@example.com
-            </div>
-            <div>
-                <b>City:</b> New York, USA
-            </div>
-            <div>
-                <b>Phone:</b> +123 456 7890
+                <div>
+                    <b>Email:</b> email@example.com
+                </div>
+                <div>
+                    <b>City:</b> New York, USA
+                </div>
+                <div>
+                    <b>Phone:</b> +123 456 7890
+                </div>
             </div>
         </div>
     </section>
