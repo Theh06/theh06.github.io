@@ -15,42 +15,242 @@
 }
 .ul-header-elem:hover{
     text-decoration: none;
-    color: white;
+    
     font-weight: bold;
 }
 #current{
     color: white;
 }
+@media (max-width: 768px) {
+    .ul-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+        list-style-type: none;
+        margin-top: 8%;
+        padding: 0;
+    }
+    .ul-header-elem{
+        text-decoration: none;
+        font-size: 18px;
+        color: #808080;
+        font-weight: bold;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        text-align: center;
+    }
+    .ul-header-elem:hover{
+        text-decoration: none;
+        font-weight: bold;
+    }
+}
+
 body{
     background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 .h1-title{
-    color: white;
     font-size: 25px;
     font-weight: bold;
+}
+.h2-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+.text-after-title{
+    font-size: 15px;
+    text-align: center;
+    width: 65%;
+    margin-bottom: 2%;
+}
+@media (max-width: 768px) {
+    .text-after-title{
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .h1-title{
+        font-size: 23px;
+        font-weight: bold;
+    }
+    .h2-title{
+        font-size: 21px;
+        font-weight: bold;
+        margin-bottom: 4%;
+        text-align: center;
+    }
 }
 /*End Main tags header + body*/
 
 /*Start About page*/
 .about-main-section{
-    width: 1200px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.about-info-block{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.about-table{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.about-info-right{
+    width: 38%;
+    padding-left: 4%;
+    padding-right: 4%;
+    font-size: 15px;
+}
+.about-info-text{
+    font-size: 16px;
+    margin-bottom: 5%;
+    text-align: justify;
+    font-size: 15px;
+}
+@media (max-width: 768px) {
+    .about-main-section {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .about-info-block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-table {
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10%;
+        gap: 4%;
+    }
+    .about-info-right {
+        width: 90%;
+        padding-left: 2%;
+        padding-right: 2%;
+        font-size: 14px;
+    }
+    .about-info-text {
+        font-size: 14px;
+        margin-bottom: 8%;
+        text-align: justify;
+    }
+    .about-photo-item{
+        width: 90%;
+    }
+    .about-photo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*End About page*/
+
+/*Start Resume page*/
+.resume-tabele{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+    gap: 4%;
+    font-size: 15px;
+}
+.resume-main-section{
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.about-table{
-    color: white;
+@media (max-width: 768px) {
+    .resume-tabele{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        gap: 4%;
+        font-size: 15px;
+    }
+    .resume-main-section{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*End Resume page*/
+
+/*Start Portfolio page*/
+.portfolio-section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.photo-item{
+    width: 100%;
+}
+.photos-block{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 10%;
-    width: 600px;
+    align-items: center;
+    gap: 1%;
+    margin-bottom: 1%;
 }
-
-/*End About page*/
-
-/*Start Resume page*/
-
-/*End Resume page*/
+.text-after-title-portfolio{
+    
+    font-size: 15px;
+    text-align: center;
+    width: 55%;
+    margin-bottom: 2%;
+}
+@media (max-width: 768px) {
+    .portfolio-section{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .photo-item{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .photos-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1%;
+        margin-bottom: 1%;
+    }
+    .text-after-title-portfolio{
+        
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 6%;
+    }
+}/*End Portfolio page*/
