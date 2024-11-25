@@ -1,12 +1,35 @@
 /*Start Main tags header + body*/
-/* Основные стили */
+
+.index-text{
+    padding-top: 6%;
+    text-align: center;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.index-text2{
+    padding-top: 1%;
+    text-align: center;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 1%;
+}
+.index-button{
+    display: flex;
+    align-items: center;
+    margin:auto;
+}
+
 header {
     display: flex;
     align-items: center;
     padding: 10px 20px;
 }
 .test32{
-    height: 90vb;
+    height: 50vb;
 }
 .logo-container {
     display: flex;
