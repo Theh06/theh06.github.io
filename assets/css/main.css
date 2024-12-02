@@ -1,7 +1,7 @@
 /*Start Main tags header + body*/
 
 .index-text{
-    padding-top: 6%;
+    padding-top: 2%;
     text-align: center;
     width: 30%;
     display: flex;
@@ -351,7 +351,39 @@ body.dark-mode {
     gap: 4%;
     font-size: 15px;
 }
+.resume-tabele2{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+    gap: 20%;
+    font-size: 15px;
+}
 .resume-main-section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.gapp{
+    height: 150px;
+}
+#clock {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+.clocks{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resume-sec-section{
     width: 80%;
     margin: auto;
     display: flex;

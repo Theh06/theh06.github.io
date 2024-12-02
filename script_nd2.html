@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <style>
+        .container { display: flex; }
+        .column {
+            width: 200px;
+            min-height: 400px;
+            margin: 0 10px;
+            padding: 10px;
+            border: 1px solid #333;
+        }
+        .task {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f0f0f0;
+            cursor: grab;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column" ondrop="drop(event)" ondragover="allowDrop(event)">IDEA</div>
+        <div class="column" ondrop="drop(event)" ondragover="allowDrop(event)">IN WORK</div>
+        <div class="column" ondrop="drop(event)" ondragover="allowDrop(event)">DONE</div>
+    </div>
+
+    <div class="task" draggable="true" ondragstart="drag(event)" id="task1">1 uzd</div>
+    <div class="task" draggable="true" ondragstart="drag(event)" id="task2">2 uzd</div>
+
+    <script>
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+        function drag(event) {
+            event.dataTransfer.setData("text", event.target.id);
+        }
+
+        function drop(event) {
+            event.preventDefault();
+            const data = event.dataTransfer.getData("text");
+            event.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</body>
+</html>
