@@ -56,6 +56,64 @@
         <button id="scrollToTopBtn" aria-label="Scroll to Top">⬆</button>
     </section>
     <div class="gapp"></div>
+    <section class="resume-contact-section">
+        <div class="form-container">
+            <h2 class="contact-title">Contact form</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="firstName">Name</label>
+                    <input type="text" id="firstName" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Surname</label>
+                    <input type="text" id="lastName" placeholder="Your surname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" placeholder="Write your e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Write a number" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Adress</label>
+                    <input type="text" id="address" placeholder="Write adress">
+                </div>
+                <h3>Score from 1 to 10:</h3>
+                <div class="form-group">
+                    <label for="question1">Your experience with our company</label>
+                    <input type="number" id="question1" min="0" max="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="question2">Quality of our service</label>
+                    <input type="number" id="question2" min="0" max="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="question3">The likelihood of you recommending us</label>
+                    <input type="number" id="question3" min="0" max="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="question4">Convenience of our website</label>
+                    <input type="number" id="question4" min="0" max="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="question5">Overall satisfaction</label>
+                    <input type="number" id="question5" min="0" max="10" required>
+                </div>
+
+                <button class="contact-button" type="button" id="saveButton">Send</button>
+            </form>
+        </div>
+    </section>
+    <section class="output-section">
+        <h3 class="output-title">Collected Data:</h3>
+        <div id="output" class="output-container"></div>
+        <h3 class="output-title">Average Score:</h3>
+        <div id="averageScore" class="average-score-container"></div>
+    </section>
+    
+    <div class="gapp"></div>
     <section class="resume-sec-section">
         <div class="resume-tabele2">
             <div class="resume-item">
@@ -92,4 +150,5 @@
 <script src="assets/script/theme-toggle.js" defer></script>
 <script src="assets/script/menu-toggle.js" defer></script>
 <script src="assets/script/scrollToTopBtn.js" defer></script>
+<script src="assets/script/contact.js" defer></script>
 </html>

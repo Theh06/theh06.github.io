@@ -23,14 +23,16 @@
     margin:auto;
 }
 
+.test32{
+    height: 22vb;
+}
+
 header {
     display: flex;
     align-items: center;
     padding: 10px 20px;
 }
-.test32{
-    height: 50vb;
-}
+
 .logo-container {
     display: flex;
     align-items: center;
@@ -215,6 +217,11 @@ body.dark-mode .ul-header-elem:hover{
     font-weight: bold;
 }
 body.dark-mode #current{
+    color: black;
+}
+body.dark-mode #clock {
+    font-size: 48px;
+    font-weight: bold;
     color: black;
 }
 body.dark-mode .sitename{
@@ -411,6 +418,110 @@ body.dark-mode {
         align-items: center;
     }
 }
+/*Contacts*/
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    background: #1e1e1e; /* Тёмный фон формы */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Тень */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.contact-title{
+    color: #ffffff;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+/*dark mode*/
+body.dark-mode label{
+    color: black;
+}
+body.dark-mode .contact-title{
+    color: black;
+}
+body.dark-mode input, select {
+    background-color: #8d8d8d;
+    color: #292929;
+}
+body.dark-mode .form-container {
+    background: #bababa;
+}
+body.dark-mode input::placeholder {
+    color: #393939;
+}
+/*dark mode*/
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #292929;
+    color: #e0e0e0;
+}
+input::placeholder {
+    color: #888;
+}
+.contact-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
+}
+
+.contact-button:active {
+    background-color: #003f7f;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.output-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    color: #e0e0e0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.output-title {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.output-container, .average-score-container {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+
+/*End contacts*/
+
 /*End Resume page*/
 
 /*Start Portfolio page*/
